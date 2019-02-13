@@ -2,7 +2,7 @@
     z-index: 800;
     position: absolute;
     position: fixed;
-    background-color: #16151ada;
+    background-color: #0b0b0eda;
     -webkit-backdrop-filter: blur(10px);
     -moz-filter: blur(10px);
     -ms-filter: blur(10px);
@@ -14,11 +14,11 @@
     margin: 0 auto;
     width: 100%;
     padding: 20px 0 20px 0;
-    border-bottom: 1px solid @darkSlateGrey;
+    border-bottom: 1px solid #0f0f11;
 }
 
 .web-title {
-    margin-left: 2%;
+    margin-left: 5%;
     
     img {
         width: 35px;
@@ -36,19 +36,25 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
-    margin-right: 2%;
+    margin-right: 5%;
     //border: @borderCheck;
+
+    a:nth-child(1){
+        color: @blue;
+        font-weight: 700;
+        font-size: .8rem;
+    }
 
     a {
         text-transform: uppercase;
-        font-size: .9rem;
+        font-size: .8rem;
         font-weight: 500;
-        color: white;
+        color: @dimGrey;
         transition: @hover;
     }
     
     a:hover {
         transition: @hover;
-        color: @dimGrey;
+        color: white;
     }
 }
