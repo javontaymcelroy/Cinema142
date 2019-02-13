@@ -1,0 +1,45 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid @darkSlateGrey;
+}
+
+.web-title {
+    margin-left: 2%;
+    
+    img {
+        width: 35px;
+        height: 35px;
+        transition: @hover;
+    }
+
+    img:hover {
+        transition: @hover;
+        filter: brightness(130%);
+    }
+}
+
+.a-tags {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 2%;
+    //border: @borderCheck;
+
+    a {
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 500;
+        color: white;
+        transition: @hover;
+    }
+    
+    a:hover {
+        transition: @hover;
+        color: @dimGrey;
+    }
+}
